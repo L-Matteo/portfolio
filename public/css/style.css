@@ -1,0 +1,454 @@
+/* global */
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ebedef;
+}
+
+.container {
+    overflow-x: hidden;
+    /*supprimer les barres de défilement */
+    overflow-y: hidden;
+}
+
+hr {
+    border: 0.20rem solid;
+    border-radius: 1rem;
+    width: 60rem;
+}
+
+main{
+    margin-left: 20rem;
+}
+
+section{
+    padding: 0.1rem;
+}
+
+h2{
+    font-weight: bold;
+}
+
+hr{
+    margin-left: 2rem;
+}
+
+/* header */
+header {
+    float: left;
+    /* pour que le header soit flottant à gauche, et donc ajouter du contenu à coté */
+    width: 20rem;
+    height: 100%;
+    background-color: #303030;
+    position: absolute;
+    position: fixed;
+    /* pour garder le header fixé à gauche */
+}
+
+header a img {
+    margin-top: 6rem;
+    margin-left: 3.5rem;
+}
+
+header a img:hover {
+    transform: scale(1.05);
+}
+
+header nav h4 {
+    text-align: center;
+    margin-top: 4.5rem;
+    font-weight: bold;
+}
+
+header nav h4 a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav h4:hover {
+    transform: scale(1.05);
+}
+
+header nav h4 a:hover {
+    color: #f1948a;
+}
+
+/* accueil */
+#accueil {
+    background-color: #f1948a;
+    width: 100%;
+    height: 100vh;
+}
+
+#accueil h1{
+    font-weight: bold;
+    margin-top: 18rem;
+    margin-left: 35%;
+}
+
+#accueil p{
+    margin-left: 35%;
+}
+
+/* profil */
+
+#profil{
+    margin-top: 3rem;
+    width: 95%;
+    height: auto;
+    margin-left: 2rem;
+    padding: 2rem;
+}
+
+#moi {
+    width: 50rem;
+    height: auto;
+}
+
+.presentation {
+    font-weight: bold;
+}
+
+#sio{
+    width: 95%;
+    height: auto;
+    background-color: white;
+    border-radius: 1.5rem;
+    margin-left: 2rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+#specialite{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+#specialite h4{
+    font-weight: bold;
+}
+
+#reseau{
+    margin-left: 1rem;
+}
+
+#dev{
+    margin-left: 5rem;
+}
+
+#dev h4{
+    color: #f1948a;
+}
+
+#btnE4, #btnE5, #btnE6{
+    width: 15rem;
+    height: 5rem;
+    border-radius: 2rem;
+    border: none;
+    margin-left: 3rem;
+    color: #303030;
+    font-weight: bold;
+    background-color: #f1948a;
+}
+
+#btnE4:hover, #btnE5:hover, #btnE6:hover{
+    transform: scale(1.1);
+}
+
+.Modalbold{
+    font-weight: bold;
+}
+
+.modal-footer{
+    text-align: left;
+}
+
+.modal-body a{
+    margin-left: 1rem;
+}
+
+#epreuves a:hover{
+    transform: scale(1.05);
+}
+
+#competences{
+    
+    border-radius: 1.5rem;
+    width: 95%;
+    height: auto;
+    margin-left: 2rem;
+    padding: 2rem;
+}
+
+#iconeCompetences, #iconeLogiciel{
+    display: flex;
+    max-width: 65%;
+}
+
+#iconeCompetences img, #iconeLogiciel img{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 7rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+#iconeCompetences img:hover, #iconeLogiciel img:hover{
+    transform: scale(1.20);
+}
+
+#parcours{
+    background-color: white;
+    border-radius: 1.5rem;
+    width: 95%;
+    height: auto;
+    margin-left: 2rem;
+    padding: 2rem;
+}
+
+#professionnel{
+    margin-top: 3rem;
+    width: 95%;
+    height: auto;
+    margin-left: 2rem;
+    padding: 2rem;
+}
+
+#BTS{
+    display: flex;
+    flex-wrap: wrap; /* revenir à la ligne si plus de place */
+    max-width: 95%;
+}
+
+#BTS p, #stage p{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+#BTS p span, #stage p span{
+    font-weight: bold;
+}
+
+.ligne-avec-boule {
+    position: relative;
+    width: 0.18rem;
+    height: 6rem;
+    background-color: #f1948a;
+    margin: 1rem;
+}
+
+.ligne-avec-boule::before, .ligne-avec-boule-stage::before {
+    content: '';
+    position: absolute;
+    top: -0.5rem;
+    left: -0.38rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: #f1948a;
+    border-radius: 50%;
+}
+
+#stage{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 45%;
+}
+
+.ligne-avec-boule-stage{
+    position: relative;
+    width: 0.18rem;
+    height: 15rem;
+    background-color: #f1948a;
+    margin: 1rem;
+}
+
+#passion1{
+    margin-left: 17.2rem;
+}
+
+#passion2{
+    margin-left: 14.8rem;
+}
+
+#stage2{
+    margin-top: 2.5rem;
+}
+
+/* projets */
+
+#projets{
+    width: 95%;
+    height: auto;
+    background-color: white;
+    border-radius: 1.5rem;
+    margin-left: 2rem;
+    padding: 2rem;
+}
+
+#card-projets{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 95%;
+}
+
+/* veille */
+
+#veille{
+    width: 95%;
+    height: auto;
+    padding: 2rem;
+    margin-left: 2rem;
+}
+
+#accordion-button-1, #accordion-button-2 {
+    background-color: #f1948a;
+    border-radius: 1rem;
+}
+
+.accordion-header{
+    background-color: #ebedef;
+}
+
+.veilleGras {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* contact */ 
+
+#contact{
+    width: 95%;
+    height: auto;
+    padding: 2rem;
+    margin-left: 2rem;
+    display: flex;
+}
+
+#infoContact{
+    width: 50%;
+    height: auto;
+    padding: 2rem;
+    margin-left: 2rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+#contact h2{
+    font-weight: bold;
+}
+
+#contact a{
+    margin-left: 3rem;
+}
+
+#contact a:hover{
+    transform: scale(1.05);
+}
+
+#contact a iframe{
+    border-radius: 1.5rem;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 12%;
+    background-color: #f1948a;
+    color: #303030;
+    top: 0;
+    padding: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h5 {
+    font-weight: bold;
+    margin-left: 14rem;
+}
+
+/* responsive */
+
+/* Mobile et petits écrans */
+@media only screen and (max-width: 600px) {
+    header {
+        width: 100%; /* Faire en sorte que le header prenne toute la largeur */
+        height: auto; /* Ajuster la hauteur automatiquement */
+        position: static; /* Laisser le header se positionner naturellement */
+    }
+
+    main {
+        margin-left: 0; /* Supprimer la marge pour le contenu principal */
+        padding: 1rem; /* Ajouter un padding pour l'espacement */
+    }
+
+    #accueil h1, #accueil p {
+        margin-left: 0; /* Centrer les textes */
+        text-align: center;
+    }
+
+    /* Réduire la taille des images dans le header */
+    header a img {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 2rem;
+    }
+
+    /* Les boutons */
+    #btnE4, #btnE5, #btnE6 {
+        width: 80%; /* Ajuster la largeur des boutons */
+        margin-left: 10%; /* Centrer les boutons */
+    }
+
+    /* Ajuster les cartes ou sections flexibles */
+    #specialite {
+        flex-direction: column; /* Empiler les éléments en colonne */
+    }
+
+    #projets, #parcours, #competences, #contact {
+        margin-left: 0;
+        width: 100%; /* Utiliser toute la largeur de l'écran */
+        padding: 1rem;
+    }
+}
+
+/* Tablettes et écrans moyens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    main {
+        margin-left: 15rem; /* Réduire la marge à gauche pour le contenu principal */
+    }
+
+    header {
+        width: 15rem; /* Réduire la taille du header pour s'adapter */
+    }
+
+    #accueil h1, #accueil p {
+        margin-left: 10%; /* Réduire la marge pour un meilleur alignement */
+    }
+
+    #btnE4, #btnE5, #btnE6 {
+        width: 40%; /* Ajuster la largeur des boutons pour tablettes */
+        margin-left: 5%;
+    }
+
+    #specialite {
+        flex-wrap: wrap; /* Autoriser le retour à la ligne */
+        justify-content: space-around; /* Espacement uniforme */
+    }
+
+    /* Ajuster la taille des images des compétences */
+    #iconeCompetences img, #iconeLogiciel img {
+        width: 5rem; /* Réduire la taille des icônes */
+    }
+}
+
+/* Grands écrans */
+@media only screen and (min-width: 1025px) {
+    /* Aucune modification majeure nécessaire ici, ton CSS de base fonctionne bien sur les grands écrans */
+}
