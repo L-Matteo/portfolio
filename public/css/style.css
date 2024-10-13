@@ -256,7 +256,7 @@ header nav h4 a:hover {
 #stage{
     display: flex;
     flex-wrap: wrap;
-    max-width: 45%;
+    max-width: 35%;
 }
 
 .ligne-avec-boule-stage{
