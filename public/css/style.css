@@ -378,43 +378,112 @@ footer h5 {
 /* Mobile et petits écrans */
 @media only screen and (max-width: 600px) {
     header {
-        width: 100%; /* Faire en sorte que le header prenne toute la largeur */
-        height: auto; /* Ajuster la hauteur automatiquement */
-        position: static; /* Laisser le header se positionner naturellement */
+        width: 100%; 
+        height: auto; 
+        position: static; 
     }
 
     main {
-        margin-left: 0; /* Supprimer la marge pour le contenu principal */
-        padding: 0.5rem; /* Ajouter un padding pour l'espacement */
+        margin-left: 0;
     }
 
     #accueil h1, #accueil p {
-        margin-left: 0; /* Centrer les textes */
+        margin-left: 0; 
         text-align: center;
     }
 
-    /* Réduire la taille des images dans le header */
     header a img {
-        width: 0.2rem;
-        margin-left: 1rem;
+        width: 5%;
+        margin-left: 20%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    #moi{
+        width: 90%;
+    }
+
+    #btnE4, #btnE5, #btnE6 {
+        width: 80%; 
+        margin-left: 10%; 
+    }
+
+    #btnE5, #btnE6{
         margin-top: 2rem;
     }
 
-    /* Les boutons */
-    #btnE4, #btnE5, #btnE6 {
-        width: 80%; /* Ajuster la largeur des boutons */
-        margin-left: 10%; /* Centrer les boutons */
+    #sio{
+        width: 95%;
+        margin-left: 1rem;
     }
 
-    /* Ajuster les cartes ou sections flexibles */
     #specialite {
         flex-direction: column; /* Empiler les éléments en colonne */
     }
 
-    #projets, #parcours, #competences, #contact {
+    #dev{
+        margin-left: 1.25rem;
+        margin-top: 1.5rem;
+    }
+
+    #competences{
+        margin-left: 1rem;
+    }
+
+    #parcours {
         margin-left: 0;
         width: 100%; /* Utiliser toute la largeur de l'écran */
         padding: 1rem;
+    }
+
+    #BTS{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 67%;
+    }
+
+    #passion1, #passion2{
+        margin-left: 1rem;
+    }
+
+    #professionnel{
+        margin-left: 0;
+    }
+
+    #stage{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 84%;
+    }
+
+    #projets{
+        width: 93% ;
+        margin-left: 1rem;
+        padding: 1rem;
+    }
+
+    #veille{
+        margin-left: 1rem;
+    }
+
+    #contact{
+        flex-direction: column;
+        width: 98%;
+        margin-left: 0;
+    }
+
+    #infoContact{
+        width: 90%;
+    }
+
+    #contact a iframe{
+        width: 90%;
+        height: 85%;
+        margin-top: 2rem;
+    }
+
+    footer h5{
+        margin-left: 2rem;
     }
 }
 
