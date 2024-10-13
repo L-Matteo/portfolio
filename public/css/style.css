@@ -385,7 +385,7 @@ footer h5 {
 
     main {
         margin-left: 0; /* Supprimer la marge pour le contenu principal */
-        padding: 1rem; /* Ajouter un padding pour l'espacement */
+        padding: 0.5rem; /* Ajouter un padding pour l'espacement */
     }
 
     #accueil h1, #accueil p {
@@ -395,8 +395,8 @@ footer h5 {
 
     /* Réduire la taille des images dans le header */
     header a img {
-        width: 80%;
-        margin-left: 10%;
+        width: 1rem;
+        margin-left: 1rem;
         margin-top: 2rem;
     }
 
