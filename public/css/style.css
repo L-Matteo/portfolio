@@ -375,7 +375,7 @@ footer h5 {
 
 /* responsive */
 
-/* Mobile et petits écrans */
+/* Mobile */
 @media only screen and (max-width: 600px) {
     header {
         width: 100%; 
@@ -418,7 +418,7 @@ footer h5 {
     }
 
     #specialite {
-        flex-direction: column; /* Empiler les éléments en colonne */
+        flex-direction: column; 
     }
 
     #dev{
@@ -430,16 +430,30 @@ footer h5 {
         margin-left: 1rem;
     }
 
+    #iconeCompetences, #iconeLogiciel{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 85%;
+    }
+
     #parcours {
         margin-left: 0;
-        width: 100%; /* Utiliser toute la largeur de l'écran */
+        width: 100%; 
         padding: 1rem;
     }
 
     #BTS{
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 67%;
+        display: block;
+    }
+
+    .ligne-avec-boule, .ligne-avec-boule-stage{
+        width: 0;
+        height: 0;
+    }
+
+    .ligne-avec-boule::before, .ligne-avec-boule-stage::before{
+        width: 0;
+        height: 0;
     }
 
     #passion1, #passion2{
@@ -487,37 +501,32 @@ footer h5 {
     }
 }
 
-/* Tablettes et écrans moyens */
+/* Tablettes */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     main {
-        margin-left: 15rem; /* Réduire la marge à gauche pour le contenu principal */
+        margin-left: 15rem; 
     }
 
     header {
-        width: 15rem; /* Réduire la taille du header pour s'adapter */
+        width: 15rem; 
     }
 
     #accueil h1, #accueil p {
-        margin-left: 10%; /* Réduire la marge pour un meilleur alignement */
+        margin-left: 10%; 
     }
 
     #btnE4, #btnE5, #btnE6 {
-        width: 40%; /* Ajuster la largeur des boutons pour tablettes */
+        width: 40%;
         margin-left: 5%;
     }
 
     #specialite {
-        flex-wrap: wrap; /* Autoriser le retour à la ligne */
-        justify-content: space-around; /* Espacement uniforme */
+        flex-wrap: wrap; 
+        justify-content: space-around; 
     }
 
-    /* Ajuster la taille des images des compétences */
+    
     #iconeCompetences img, #iconeLogiciel img {
-        width: 5rem; /* Réduire la taille des icônes */
+        width: 5rem; 
     }
-}
-
-/* Grands écrans */
-@media only screen and (min-width: 1025px) {
-    /* Aucune modification majeure nécessaire ici, ton CSS de base fonctionne bien sur les grands écrans */
 }
