@@ -78,8 +78,7 @@ header nav h4 a:hover {
 
 /* accueil */
 #accueil {
-    background-image: url('../images/dev.webp');
-    background-size: cover;
+    background-color: #f1948a;
     width: 100%;
     height: 100vh;
 }
@@ -88,12 +87,10 @@ header nav h4 a:hover {
     font-weight: bold;
     margin-top: 18rem;
     margin-left: 35%;
-    color: #f1948a;
 }
 
 #accueil p{
     margin-left: 35%;
-    color: #f1948a; 
 }
 
 /* profil */
@@ -533,6 +530,7 @@ footer h5 {
         width: 5rem; 
     }
 }
+
 
 
 
